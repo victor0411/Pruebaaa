@@ -10,5 +10,15 @@ package com.mycompany.figura;
  * @author SuperUs
  */
 public class Cuadrado extends Bidimencional {
+
+    public void digite(){
+        System.out.println("Cuadrado");
+    }
+    
+    public void imprimirTipoFigura() {
+    }
+
+    public void imprimirPerimetroArea() {
+    }
     
 }

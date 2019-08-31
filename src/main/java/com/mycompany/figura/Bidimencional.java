@@ -9,6 +9,7 @@ package com.mycompany.figura;
  *
  * @author SuperUs
  */
-public abstract class Bidimencional {
+public abstract class Bidimencional implements Comportamiento{
     
+   
 }

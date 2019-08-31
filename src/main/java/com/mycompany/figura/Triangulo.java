@@ -10,5 +10,19 @@ package com.mycompany.figura;
  * @author SuperUs
  */
 public class Triangulo extends Bidimencional{
+
+    
+    public void digite(){
+        System.out.println("Triangulo");
+    }
+    
+    public void imprimirTipoFigura() {
+
+    }
+
+    
+    public void imprimirPerimetroArea() {
+        
+    }
     
 }

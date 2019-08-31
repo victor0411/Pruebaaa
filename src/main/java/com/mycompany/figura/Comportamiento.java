@@ -11,4 +11,9 @@ package com.mycompany.figura;
  */
 public interface Comportamiento {
     
+    public void imprimirTipoFigura();
+    
+    public void imprimirPerimetroArea();
+    
+    
 }
