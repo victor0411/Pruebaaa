@@ -11,10 +11,10 @@ package com.mycompany.figura;
  */
 public abstract class Bidimencional implements Comportamiento{
     
-    public int perimetro;
-    public int area;
+    public double perimetro;
+    public double area;
 
-    public Bidimencional(int perimetro, int area) {
+    public Bidimencional(double perimetro, double area) {
         this.perimetro = perimetro;
         this.area = area;
     }
@@ -22,7 +22,7 @@ public abstract class Bidimencional implements Comportamiento{
     public Bidimencional() {
     }
 
-    public int getPerimetro() {
+    public double getPerimetro() {
         return perimetro;
     }
 
@@ -30,7 +30,7 @@ public abstract class Bidimencional implements Comportamiento{
         this.perimetro = perimetro;
     }
 
-    public int getArea() {
+    public double getArea() {
         return area;
     }
 
