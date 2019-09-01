@@ -40,7 +40,7 @@ public class Principal {
                             cuadrado.digite();
                             break;
                         case 2:
-                            triangulo.digite();
+                            triangulo.subMenu();
                             break;
                         case 3:
                              circulo.digite();
