@@ -10,5 +10,7 @@ package com.mycompany.figura;
  * @author SuperUs
  */
 public class Esfera {
-    
+    public void digite(){
+        System.out.println("Esfera");
+    }
 }

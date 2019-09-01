@@ -10,5 +10,7 @@ package com.mycompany.figura;
  * @author SuperUs
  */
 public class Piramide {
-    
+    public void digite(){
+        System.out.println("Piramide");
+    }
 }

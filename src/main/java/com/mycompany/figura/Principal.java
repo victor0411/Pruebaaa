@@ -12,22 +12,29 @@ import java.util.Scanner;
  */
 public class Principal {
     Cuadrado cuadrado = new Cuadrado();
-    Circulo circulo = new Circulo();
     Triangulo triangulo = new Triangulo();
+    Circulo circulo = new Circulo();
+    Cubo cubo = new Cubo();
+    Piramide piramide = new Piramide();
+    Esfera esfera = new Esfera();
+    
     Scanner sc = new Scanner(System.in);
     private int elije;
     private String desea;
     
-    public void Elejir(){
-       
-        
-        do{          
+    public void menu(){
             System.out.println("Digite Tipo de Figura :");
             System.out.println("1. Cuadrado");
             System.out.println("2. Triangulo");
             System.out.println("3. Circulo");
+            System.out.println("4. Cubo");
+            System.out.println("5. Piramide");
+            System.out.println("6. Esfera");
             elije = sc.nextInt();
-            
+    }
+    public void elejir(){
+        do{          
+            menu();
             switch(elije){
                         case 1:
                             cuadrado.digite();
@@ -38,14 +45,22 @@ public class Principal {
                         case 3:
                              circulo.digite();
                             break;
+                        case 4:
+                            cubo.digite();
+                            break;
+                        case 5:
+                            piramide.digite();
+                            break;
+                        case 6:
+                            esfera.digite();
+                            break;
                         default:
                             System.out.println("Opcion Invalida");
                             break;
                     }
-            System.out.println("¿Desea agregar otra figura? ");
+            System.out.println("Digite (S) para agregar otra Figura");
             desea = sc.next();
-        }while(desea.equalsIgnoreCase("s"));
-      
+        }while(desea.equalsIgnoreCase("s"));    
     }
     
 }
