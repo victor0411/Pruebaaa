@@ -13,61 +13,77 @@ import java.util.Scanner;
  */
 public class Piramide extends Tridimencional{
     Scanner sc = new Scanner(System.in);
-    private int numLado;
-    private double lado1;
-    private double lado2;
-    private double lado3;
-    private double lado4;
-    private double lado5;
-    
-    public void subMenu(){  
-        System.out.println("Digite numero de Lados de la Base (3-5):");
-        numLado = sc.nextInt();
-        switch(numLado){
-            case 1:
-                System.out.println("Digite Lado 1");
-                lado1=sc.nextInt();
-                System.out.println("Digite Lado 2");
-                lado2=sc.nextInt();
-                System.out.println("Digite Lado 3");
-                lado3=sc.nextInt();
-                break;
-            case 2:
-                System.out.println("Digite Lado 1");
-                lado1=sc.nextInt();
-                System.out.println("Digite Lado 2");
-                lado2=sc.nextInt();
-                System.out.println("Digite Lado 3");
-                lado3=sc.nextInt();
-                System.out.println("Digite Lado 4");
-                lado4=sc.nextInt();
-                break; 
-            case 3:
-                System.out.println("Digite Lado 1");
-                lado1=sc.nextInt();
-                System.out.println("Digite Lado 2");
-                lado2=sc.nextInt();
-                System.out.println("Digite Lado 3");
-                lado3=sc.nextInt();
-                System.out.println("Digite Lado 4");
-                lado4=sc.nextInt();
-                System.out.println("Digite Lado 5");
-                lado4=sc.nextInt();
-                break;
-            default:
-                System.out.println("Numero de Lados Invadidos");
-        }
-    }
-    public void digite(){
-        
+    private double ladoBase;
+    private double altura;
+    private double numLado;
+
+    public Piramide() {
     }
 
     
+    public double getLadoBase() {
+        return ladoBase;
+    }
+
+    public void setLadoBase(double ladoBase) {
+        this.ladoBase = ladoBase;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public double getNumLado() {
+        return numLado;
+    }
+
+    public void setNumLado(double numLado) {
+        this.numLado = numLado;
+    }
+    
+
+    public void digite(){
+        double areaLateral;
+        System.out.println("Digite numero de lados :");
+        numLado = sc.nextInt();
+        if(numLado>=7||numLado<=3){
+            System.out.println("Numero de Lados Invalido");
+        }else{      
+            System.out.println("Digite el Lado Base :");
+            ladoBase = sc.nextInt();
+            System.out.println("Digite Altura :");
+            altura = sc.nextInt();
+        }
+        volumen = ((numLado*ladoBase)*altura)/3;
+        perimetro=numLado*ladoBase;
+        areaLateral=Math.sqrt(altura+(ladoBase/2));
+        area=(((numLado*ladoBase)*areaLateral)/2);
+        imprimirTipoFigura();
+    }
+    
+    
     @Override
     public void imprimirTipoFigura() {
+        if(numLado==3){
+            System.out.println("Piramide Triangular");
+        }else if(numLado==4){
+            System.out.println("Piramide Cuadrangular");
+        }else if(numLado==5){
+            System.out.println("Piramide Pentagonal");
+        }else{
+            System.out.println("Piramide Hexagonal");
+        }
+        imprimirPerimetroArea();
     }
 
     @Override
     public void imprimirPerimetroArea() {
+        System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
+        System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
+        System.out.println("Volumen es igual a :" + (double)Math.round(volumen * 100)/100 );
     }
 }

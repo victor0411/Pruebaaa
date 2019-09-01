@@ -16,6 +16,10 @@ public class Cuadrado extends Bidimencional {
     private int lado1;
     private int lado2;
     private int tipo;
+
+    public Cuadrado() {
+    }
+    
     
     public int getTipo() {
         return tipo;
@@ -73,9 +77,8 @@ public class Cuadrado extends Bidimencional {
 
     @Override
     public void imprimirPerimetroArea() {
-
-        System.out.println("Area es igual a: " + area);
-        System.out.println("Perimetro es igual a: " + perimetro);
+        System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
+        System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
              
     }
 

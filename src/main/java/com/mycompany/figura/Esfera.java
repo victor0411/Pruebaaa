@@ -13,6 +13,9 @@ public class Esfera extends Tridimencional{
     Scanner sc = new Scanner(System.in);
     private double radio;
 
+    public Esfera() {
+    }
+
     public double getRadio() {
         return radio;
     }

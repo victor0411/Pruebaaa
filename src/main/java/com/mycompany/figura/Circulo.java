@@ -15,6 +15,26 @@ public class Circulo extends Bidimencional {
     Scanner sc = new Scanner(System.in);
     private double diametro;
     private double radio;
+
+    public Circulo() {
+        
+    }
+
+    public double getDiametro() {
+        return diametro;
+    }
+
+    public void setDiametro(double diametro) {
+        this.diametro = diametro;
+    }
+
+    public double getRadio() {
+        return radio;
+    }
+
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }
     
     public void digite(){
         System.out.println("Digite Diametro");

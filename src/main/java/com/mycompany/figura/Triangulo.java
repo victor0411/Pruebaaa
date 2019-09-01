@@ -16,6 +16,43 @@ public class Triangulo extends Bidimencional{
     private double lado2;
     private double lado3;
     private int tipo;
+
+    public Triangulo() {
+    }
+
+    
+    public double getLado1() {
+        return lado1;
+    }
+
+    public void setLado1(double lado1) {
+        this.lado1 = lado1;
+    }
+
+    public double getLado2() {
+        return lado2;
+    }
+
+    public void setLado2(double lado2) {
+        this.lado2 = lado2;
+    }
+
+    public double getLado3() {
+        return lado3;
+    }
+
+    public void setLado3(double lado3) {
+        this.lado3 = lado3;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+    
     
     public void subMenu(){     
         System.out.println("Digite Lado 1");
@@ -62,8 +99,8 @@ public class Triangulo extends Bidimencional{
     
     @Override
     public void imprimirPerimetroArea() {
-        System.out.println("Area es igual a: " + area);
-        System.out.println("Perimetro es igual a: " + perimetro);
+        System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
+        System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
     }
     
 }

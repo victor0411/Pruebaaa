@@ -18,6 +18,9 @@ public class Cubo extends Tridimencional{
     private double lado3;
     private int tipo;
 
+    public Cubo() {
+    }
+
     public double getLado3() {
         return lado3;
     }
@@ -84,9 +87,10 @@ public class Cubo extends Tridimencional{
   
     @Override
     public void imprimirPerimetroArea() {
-        System.out.println("Area es igual a: " + area);
-        System.out.println("Perimetro es igual a: " + perimetro);
-        System.out.println("Volumen es igual a: " + volumen);
+        
+        System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
+        System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
+        System.out.println("Volumen es igual a: " + (double)Math.round(volumen * 100)/100 );
     }
     
     
