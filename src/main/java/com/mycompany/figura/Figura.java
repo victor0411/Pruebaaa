@@ -11,11 +11,6 @@ import java.util.ArrayList;
  *
  * @author SuperUs
  */
-public interface Comportamiento {
-    
-    public void imprimirTipoFigura();
-    
-    public void imprimirPerimetroArea();
-    
-    
+public abstract class Figura implements Comportamiento{
+
 }

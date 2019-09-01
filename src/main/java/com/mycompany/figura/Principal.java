@@ -49,7 +49,7 @@ public class Principal {
                             cubo.digite();
                             break;
                         case 5:
-                            piramide.digite();
+                            piramide.subMenu();
                             break;
                         case 6:
                             esfera.digite();

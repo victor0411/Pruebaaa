@@ -5,6 +5,8 @@
  */
 package com.mycompany.figura;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author SuperUs

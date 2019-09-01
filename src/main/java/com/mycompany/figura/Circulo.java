@@ -25,11 +25,13 @@ public class Circulo extends Bidimencional {
         imprimirTipoFigura();
     }
    
+    @Override
     public void imprimirTipoFigura() {
         System.out.println("Circulo");
         imprimirPerimetroArea();
     }
 
+    @Override
     public void imprimirPerimetroArea() {
         System.out.println("Area es igual a: " +(double)Math.round(area * 100)/100 );
         System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );

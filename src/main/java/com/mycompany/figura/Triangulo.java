@@ -47,6 +47,8 @@ public class Triangulo extends Bidimencional{
         area=Math.sqrt(semiperimetro*((semiperimetro-lado1)*(semiperimetro-lado2)*(semiperimetro-lado3)));
         imprimirTipoFigura();
     }
+    
+    @Override
     public void imprimirTipoFigura() {    
         if(tipo==1){
             System.out.println("Equilatero");
@@ -57,6 +59,8 @@ public class Triangulo extends Bidimencional{
         }
         imprimirPerimetroArea();     
     }
+    
+    @Override
     public void imprimirPerimetroArea() {
         System.out.println("Area es igual a: " + area);
         System.out.println("Perimetro es igual a: " + perimetro);

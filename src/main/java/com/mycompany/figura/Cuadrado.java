@@ -4,20 +4,19 @@
  * and open the template in the editor.
  */
 package com.mycompany.figura;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
  *
  * @author SuperUs
  */
-public class Cuadrado extends Bidimencional {
-
-    
+public class Cuadrado extends Bidimencional {    
     Scanner sc = new Scanner(System.in);
     private int lado1;
     private int lado2;
     private int tipo;
-
+    
     public int getTipo() {
         return tipo;
     }
@@ -61,6 +60,7 @@ public class Cuadrado extends Bidimencional {
         }
     }
     
+    @Override
     public void imprimirTipoFigura() {    
         if(tipo==1){ 
             System.out.println("Figura Cuadrado");
@@ -71,10 +71,13 @@ public class Cuadrado extends Bidimencional {
         }
     }
 
+    @Override
     public void imprimirPerimetroArea() {
+
         System.out.println("Area es igual a: " + area);
         System.out.println("Perimetro es igual a: " + perimetro);
-        
+             
     }
+
     
 }
