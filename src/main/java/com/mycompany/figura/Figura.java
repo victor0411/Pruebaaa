@@ -8,12 +8,19 @@ package com.mycompany.figura;
 import java.util.ArrayList;
 
 /**
- *
- * @author SuperUs
+ * Clase padre de Bidimencional y Tridimencional
+ * @author Edward Ramos
+ * @author Victor Preciado
  */
 
 public abstract class Figura implements Comportamiento{
+    /**
+     * figura Lista
+     */
     public static ArrayList<ArrayList<Double>> figura = new  ArrayList();
+    /**
+     * Metodo el cual implementan los hijos
+     */
     public void imprimirPerimetroArea(){
     
     }

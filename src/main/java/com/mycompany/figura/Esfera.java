@@ -8,23 +8,39 @@ import java.util.ArrayList;
 import java.util.Scanner;
 /**
  *
- * @author SuperUs
+ * @author Edward Ramos
+ * @author Victor Preciado
  */
 public class Esfera extends Tridimencional{
+    /**
+     * radio variable que almacena el radio de la esfera
+     * tipo variable que almacena el tipo 
+     */
     Scanner sc = new Scanner(System.in);
     private double radio;
     private int tipo;
+    /**
+     * constructor clase esfera
+     */
     public Esfera() {
     }
-
+    /**
+     * get variable radio
+     * @return radio
+     */
     public double getRadio() {
         return radio;
     }
-
+    /**
+     * set variable radio
+     * @param radio 
+     */
     public void setRadio(double radio) {
         this.radio = radio;
     }
-
+    /**
+     * metodo digite el cual pide el radio
+     */
     
     public void digite(){
         
@@ -35,7 +51,9 @@ public class Esfera extends Tridimencional{
         volumen=(4*Math.PI*(Math.pow(radio, 3)))/3;
         imprimirTipoFigura();
     }
-
+    /**
+    * Metodo imprimir figura el cual proviene de la interface Comportamiento
+    */
    
     @Override
     public void imprimirTipoFigura() {
@@ -43,7 +61,9 @@ public class Esfera extends Tridimencional{
         imprimirPerimetroArea();
     }
 
-    
+    /**
+     * Metodo ImprimirPerimetroArea el cual proviene del padre
+     */
     public void imprimirPerimetroArea() {
        // System.out.println("Area es igual a: " +(double)Math.round(area * 100)/100 );
        // System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );

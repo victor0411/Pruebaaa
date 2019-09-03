@@ -7,10 +7,15 @@ package com.mycompany.figura;
 import java.util.Scanner;
 
 /**
- *
- * @author SuperUs
+ *  Clase principal donde estan las impresiones y el menu
+ * @author Edward Ramos
+ * @author Victor Preciado
  */
 public class Principal {
+    /**
+     * elije variable que almacena la opcion que el usuario elije
+     * desea variable que almacena si desea agregar otra figura
+     */
     Cuadrado cuadrado = new Cuadrado();
     Triangulo triangulo = new Triangulo();
     Circulo circulo = new Circulo();
@@ -22,6 +27,9 @@ public class Principal {
     private int elije;
     private String desea;
     
+    /**
+     * Metodo menu almacena la figura que el usuario elije
+     */
     public void menu(){
             System.out.println("Digite Tipo de Figura :");
             System.out.println("1. Cuadrado");
@@ -32,6 +40,10 @@ public class Principal {
             System.out.println("6. Esfera");
             elije = sc.nextInt();
     }
+    /**
+     * metodo elejir es depende de lo que el usuario halla ingresado en elije y
+     * se dirige al metodo escojido de la clase
+     */
     public void elejir(){
         do{          
             menu();
@@ -63,7 +75,9 @@ public class Principal {
         }while(desea.equalsIgnoreCase("s"));
         imprimir();
     }
-    
+    /**
+     * metodo imprimir imprime el arraylist figura
+     */
     public void imprimir(){
           String a= "";
           for(int i=0;i<Figura.figura.size(); i++) 
@@ -71,7 +85,7 @@ public class Principal {
                   if(Figura.figura.get(i).get(0) == 1.0)
                   {
                       System.out.println("Figura "+ i + " - Circulo: ");
-                      System.out.println("    Diametro: " + Figura.figura.get(i).get(1) + "    Tipo Figura: " + "Circulo");
+                      System.out.println("    Area: " + Figura.figura.get(i).get(1) + "    Perimetro: " + Figura.figura.get(i).get(2) + "    Tipo Figura: " + "Circulo");
                   }else if(Figura.figura.get(i).get(0) == 2.0)
                   {
                       System.out.println("Figura "+ i + " - Cuadrado: ");

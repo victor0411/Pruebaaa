@@ -9,51 +9,87 @@ import java.util.Scanner;
 
 /**
  *
- * @author SuperUs
+ * @author Edward Ramos
+ * @author Victor Preciado
  */
 public class Cubo extends Tridimencional{
+    /**
+     * lado1 variable que guarda el lado1 del cubo
+     * lado2 variable que guarda el lado2 del cubo
+     * lado3 variable que guarda el lado3 del cubo
+     * tipo variable que guarda si es cubo o octoedro
+     */
     Scanner sc = new Scanner(System.in);
     private double lado1;
     private double lado2;
     private double lado3;
     private int tipo;
-
+    
+    /**
+     * Constructor clase Cubo
+     */
     public Cubo() {
     }
-
+    /**
+     * get variable lado3
+     * @return lado3
+     */
     public double getLado3() {
         return lado3;
     }
-
+    /**
+     * set variable lado3
+     * @param lado3 
+     */
     public void setLado3(double lado3) {
         this.lado3 = lado3;
     }
-
+    /**
+     * get variable lado1
+     * @return lado1
+     */
     public double getLado1() {
         return lado1;
     }
-
+    /**
+     * ser variable lado1
+     * @param lado1 
+     */
     public void setLado1(double lado1) {
         this.lado1 = lado1;
     }
-
+    /**
+     * get variable lado2
+     * @return lado2
+     */
     public double getLado2() {
         return lado2;
     }
-
+    /**
+     * set variable lado2
+     * @param lado2 
+     */
     public void setLado2(double lado2) {
         this.lado2 = lado2;
     }
-
+    /**
+     * get variable tipo
+     * @return tipo
+     */
     public int getTipo() {
         return tipo;
     }
-
+    /**
+     * set variable tipo
+     * @param tipo 
+     */
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
     
-   
+   /**
+    * metodo digite el cual almacena los 3 lados del cubo
+    */
     public void digite(){
         System.out.println("Digite Lado 1");
         lado1 = sc.nextInt();
@@ -73,7 +109,9 @@ public class Cubo extends Tridimencional{
         imprimirTipoFigura();
     }
 
-   
+   /**
+    * Metodo imprimir figura el cual proviene de la interface Comportamiento
+    */
     @Override
     public void imprimirTipoFigura() {
         if(tipo==1){
@@ -84,7 +122,10 @@ public class Cubo extends Tridimencional{
         imprimirPerimetroArea();
     }
 
-  
+    /**
+     * Metodo ImprimirPerimetroArea el cual proviene del padre
+     */
+    @Override
     public void imprimirPerimetroArea() {
         
        // System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );

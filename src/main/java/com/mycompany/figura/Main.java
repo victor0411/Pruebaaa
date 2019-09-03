@@ -9,14 +9,14 @@ import java.util.ArrayList;
 
 /**
  *
- * @author 
+ * @author Edward Ramos
+ * @author Victor Preciado
  */
 public class Main {
 
     /**
      * @param args the command line arguments
      */
-   // public static ArrayList<ArrayList<Double>> figura = new  ArrayList();
     public static void main(String[] args) {
         Principal principal = new Principal();
         principal.elejir();

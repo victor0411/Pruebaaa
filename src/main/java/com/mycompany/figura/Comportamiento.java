@@ -6,11 +6,15 @@
 package com.mycompany.figura;
 
 /**
- *
- * @author SuperUs
+ * Interface
+ * @author Edward Ramos
+ * @author Victor Preciado
  */
 public interface Comportamiento {
     
+    /**
+     * metodo que deben usar todos los hijos
+     */
     public void imprimirTipoFigura();
     
     
