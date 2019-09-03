@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package com.mycompany.figura;
+import java.util.ArrayList;
 import java.util.Scanner;
 /**
  *
@@ -12,7 +13,7 @@ import java.util.Scanner;
 public class Esfera extends Tridimencional{
     Scanner sc = new Scanner(System.in);
     private double radio;
-
+    private int tipo;
     public Esfera() {
     }
 
@@ -48,5 +49,12 @@ public class Esfera extends Tridimencional{
         System.out.println("Area es igual a: " +(double)Math.round(area * 100)/100 );
         System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
         System.out.println("Volumen es igual a: " + (double)Math.round(volumen * 100)/100 );
+        contador = (Main.figura.size());
+        Main.figura.add(new ArrayList<Double>());
+        Main.figura.get(contador).add(5.0); // 0 , Tipo Figura    ##Cuadrado = 1.0
+        Main.figura.get(contador).add(area); //1, Area del Cadrado
+        Main.figura.get(contador).add(perimetro);//2, 
+        Main.figura.get(contador).add(volumen); //3
+        Main.figura.get(contador).add((tipo*1.0)); //4,  Tipo de Figura cuadrada  ##Rectangulo = 2.0
     }
 }
