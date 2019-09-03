@@ -16,7 +16,7 @@ public abstract class Bidimencional implements Comportamiento{
     public double perimetro;
     public double area;
      public int contador;
-    public Bidimencional(double perimetro, double area) {
+    public Bidimencional(double perimetro, double area, int contador) {
         this.perimetro = perimetro;
         this.area = area;
         this.contador = contador;
