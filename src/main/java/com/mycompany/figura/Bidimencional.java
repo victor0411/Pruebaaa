@@ -15,10 +15,11 @@ public abstract class Bidimencional implements Comportamiento{
     
     public double perimetro;
     public double area;
-
+     public int contador;
     public Bidimencional(double perimetro, double area) {
         this.perimetro = perimetro;
         this.area = area;
+        this.contador = contador;
     }
 
     public Bidimencional() {
@@ -38,6 +39,13 @@ public abstract class Bidimencional implements Comportamiento{
 
     public void setArea(int area) {
         this.area = area;
+    }
+     public double getContador() {
+        return contador;
+    }
+
+    public void setContador(int contador) {
+        this.contador = contador;
     }
     
    
