@@ -6,6 +6,7 @@
 package com.mycompany.figura;
 
 import java.util.ArrayList;
+import java.util.Vector;
 
 /**
  *
