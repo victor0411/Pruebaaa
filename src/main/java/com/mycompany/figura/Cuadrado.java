@@ -6,7 +6,7 @@
 package com.mycompany.figura;
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import java.util.Vector;
 /**
  *
  * @author SuperUs
@@ -16,7 +16,7 @@ public class Cuadrado extends Bidimencional {
     private int lado1;
     private int lado2;
     private int tipo;
-
+    ArrayList<ArrayList<Double>> arrayCuadrado = new  ArrayList();
     public Cuadrado() {
     }
     
@@ -79,7 +79,12 @@ public class Cuadrado extends Bidimencional {
     public void imprimirPerimetroArea() {
         System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
         System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
-             
+        contador = (Main.figura.size());
+        Main.figura.add(new ArrayList<Double>());
+        Main.figura.get(contador).add(2.0);
+        Main.figura.get(contador).add(area); 
+        Main.figura.get(contador).add(perimetro);
+        Main.figura.get(contador).add((tipo*1.0)); 
     }
 
     
