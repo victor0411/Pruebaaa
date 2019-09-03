@@ -61,38 +61,42 @@ public class Principal {
             System.out.println("Digite (S) para agregar otra Figura");
             desea = sc.next();
         }while(desea.equalsIgnoreCase("s"));
+        imprimir();
+    }
+    
+    public void imprimir(){
           String a= "";
-          for(int i=0;i<Main.figura.size(); i++) 
+          for(int i=0;i<Figura.figura.size(); i++) 
           {
-                  if(Main.figura.get(i).get(0) == 1.0)
+                  if(Figura.figura.get(i).get(0) == 1.0)
                   {
                       System.out.println("Figura "+ i + " - Circulo: ");
-                      System.out.println("    Diametro: " + Main.figura.get(i).get(1) + "    Tipo Figura: " + "Circulo");
-                  }else if(Main.figura.get(i).get(0) == 2.0)
+                      System.out.println("    Diametro: " + Figura.figura.get(i).get(1) + "    Tipo Figura: " + "Circulo");
+                  }else if(Figura.figura.get(i).get(0) == 2.0)
                   {
                       System.out.println("Figura "+ i + " - Cuadrado: ");
-                      if(Main.figura.get(i).get(3) == 1.0) a="Cuadrado"; else a= "Rectangulo";
-                      System.out.println("    Area: " + Main.figura.get(i).get(1) +"    Perimetro: " + Main.figura.get(i).get(2) + " Tipo Figura: " + a);
-                  }else if(Main.figura.get(i).get(0) == 3.0)
+                      if(Figura.figura.get(i).get(3) == 1.0) a="Cuadrado"; else a= "Rectangulo";
+                      System.out.println("    Area: " + Figura.figura.get(i).get(1) +"    Perimetro: " + Figura.figura.get(i).get(2) + " Tipo Figura: " + a);
+                  }else if(Figura.figura.get(i).get(0) == 3.0)
                   {
                       System.out.println("Figura "+ i + " - Triangulo: ");
-                      if(Main.figura.get(i).get(3) == 1.0) a="Equilatero"; else if(Main.figura.get(i).get(3) == 2.0)a = "Isosceles";  else a= "Escaleno";
-                      System.out.println("    Area: " + Main.figura.get(i).get(1) +"   Perimetro: " + Main.figura.get(i).get(2) + "    Tipo Figura: " + a);
-                  }else if(Main.figura.get(i).get(0) == 4.0)
+                      if(Figura.figura.get(i).get(3) == 1.0) a="Equilatero"; else if(Figura.figura.get(i).get(3) == 2.0)a = "Isosceles";  else a= "Escaleno";
+                      System.out.println("    Area: " + Figura.figura.get(i).get(1) +"   Perimetro: " + Figura.figura.get(i).get(2) + "    Tipo Figura: " + a);
+                  }else if(Figura.figura.get(i).get(0) == 4.0)
                   {
                       System.out.println("Figura "+ i + " - Cubo: ");
-                      if(Main.figura.get(i).get(4) == 1.0) a="Cubo"; else a="Ortoedro";
-                      System.out.println("    Area: " + Main.figura.get(i).get(1) +"    Perimetro: " + Main.figura.get(i).get(2) +"   Volumen: "+ Main.figura.get(i).get(3) +"    Tipo Figura: " + a);
-                  }else if(Main.figura.get(i).get(0) == 5.0)
+                      if(Figura.figura.get(i).get(4) == 1.0) a="Cubo"; else a="Ortoedro";
+                      System.out.println("    Area: " + Figura.figura.get(i).get(1) +"    Perimetro: " + Figura.figura.get(i).get(2) +"   Volumen: "+ Figura.figura.get(i).get(3) +"    Tipo Figura: " + a);
+                  }else if(Figura.figura.get(i).get(0) == 5.0)
                   {
                       System.out.println("Figura "+ i + " - Esfera: ");
-                      System.out.println("    Area: " + Main.figura.get(i).get(1) +"    Perimetro: " + Main.figura.get(i).get(2) +"   Volumen: "+ Main.figura.get(i).get(3) +"    Tipo Figura: " + "Esfera");
+                      System.out.println("    Area: " + Figura.figura.get(i).get(1) +"    Perimetro: " + Figura.figura.get(i).get(2) +"   Volumen: "+ Figura.figura.get(i).get(3) +"    Tipo Figura: " + "Esfera");
                   }
-                   if(Main.figura.get(i).get(0) == 6.0)
+                   if(Figura.figura.get(i).get(0) == 6.0)
                   {
                       System.out.println("Figura "+ i + " - Piramide: ");
-                      if(Main.figura.get(i).get(4) == 3.0) a="Piramide Triangular"; else if(Main.figura.get(i).get(4) == 4.0)a = "Piramide Cuadrangular";  else if(Main.figura.get(i).get(4) == 5.0)a = "Piramide Pentagonal"; else a = "Piramide Hexagonal";
-                      System.out.println("    Area: " + Main.figura.get(i).get(1) +"    Perimetro: " + Main.figura.get(i).get(2) +"   Volumen: "+ Main.figura.get(i).get(3) +"    Tipo Figura: " + a);
+                      if(Figura.figura.get(i).get(4) == 3.0) a="Piramide Triangular"; else if(Figura.figura.get(i).get(4) == 4.0)a = "Piramide Cuadrangular";  else if(Figura.figura.get(i).get(4) == 5.0)a = "Piramide Pentagonal"; else a = "Piramide Hexagonal";
+                      System.out.println("    Area: " + Figura.figura.get(i).get(1) +"    Perimetro: " + Figura.figura.get(i).get(2) +"   Volumen: "+ Figura.figura.get(i).get(3) +"    Tipo Figura: " + a);
                   }                  
               System.out.println(" ");
           }

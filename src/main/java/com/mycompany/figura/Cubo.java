@@ -85,19 +85,19 @@ public class Cubo extends Tridimencional{
     }
 
   
-    @Override
     public void imprimirPerimetroArea() {
         
-        System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
-        System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
-        System.out.println("Volumen es igual a: " + (double)Math.round(volumen * 100)/100 );
-        contador = (Main.figura.size());
-        Main.figura.add(new ArrayList<Double>());
-        Main.figura.get(contador).add(4.0);
-        Main.figura.get(contador).add(area); 
-        Main.figura.get(contador).add(perimetro);
-        Main.figura.get(contador).add(volumen); 
-        Main.figura.get(contador).add((tipo*1.0));
+       // System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
+       // System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
+       // System.out.println("Volumen es igual a: " + (double)Math.round(volumen * 100)/100 );
+        System.out.println("Cubo Ingresado");
+        contador = (Figura.figura.size());
+        Figura.figura.add(new ArrayList<Double>());
+        Figura.figura.get(contador).add(4.0);
+        Figura.figura.get(contador).add(area); 
+        Figura.figura.get(contador).add(perimetro);
+        Figura.figura.get(contador).add(volumen); 
+        Figura.figura.get(contador).add((tipo*1.0));
     }
     
     

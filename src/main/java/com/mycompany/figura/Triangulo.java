@@ -98,16 +98,16 @@ public class Triangulo extends Bidimencional{
         imprimirPerimetroArea();     
     }
     
-    @Override
     public void imprimirPerimetroArea() {
-        System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
-        System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
-        contador = (Main.figura.size());
-        Main.figura.add(new ArrayList<Double>());
-        Main.figura.get(contador).add(3.0); // 0 , Tipo Figura    ##Cuadrado = 1.0
-        Main.figura.get(contador).add(area); //1, Area del Cadrado
-        Main.figura.get(contador).add(perimetro);//2, 
-        Main.figura.get(contador).add((tipo*1.0)); //3,  Tipo de Figura cuadrada  ##Rectangulo = 2.0
+       // System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
+      //  System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
+        System.out.println("Triangulo Ingresado");
+        contador = (Figura.figura.size());
+        Figura.figura.add(new ArrayList<Double>());
+        Figura.figura.get(contador).add(3.0); // 0 , Tipo Figura    ##Cuadrado = 1.0
+        Figura.figura.get(contador).add(area); //1, Area del Cadrado
+        Figura.figura.get(contador).add(perimetro);//2, 
+        Figura.figura.get(contador).add((tipo*1.0)); //3,  Tipo de Figura cuadrada  ##Rectangulo = 2.0
     }
     
 }

@@ -80,17 +80,17 @@ public class Piramide extends Tridimencional{
         imprimirPerimetroArea();
     }
 
-    @Override
     public void imprimirPerimetroArea() {
-        System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
-        System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
-        System.out.println("Volumen es igual a :" + (double)Math.round(volumen * 100)/100 );
-        contador = (Main.figura.size());
-         Main.figura.add(new ArrayList<Double>());
-         Main.figura.get(contador).add(6.0); // 0 , Tipo Figura    ##Cuadrado = 1.0
-         Main.figura.get(contador).add(area); //1, Area del Cadrado
-         Main.figura.get(contador).add(perimetro);//2, 
-         Main.figura.get(contador).add(volumen); //3
-         Main.figura.get(contador).add((numLado*1.0)); //4,  Tipo de Figura cuadrada  ##Rectangulo = 2.0
+       // System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
+       // System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
+       // System.out.println("Volumen es igual a :" + (double)Math.round(volumen * 100)/100 );
+        System.out.println("Piramide Ingresado");
+        contador = (Figura.figura.size());
+         Figura.figura.add(new ArrayList<Double>());
+         Figura.figura.get(contador).add(6.0); // 0 , Tipo Figura    ##Cuadrado = 1.0
+         Figura.figura.get(contador).add(area); //1, Area del Cadrado
+         Figura.figura.get(contador).add(perimetro);//2, 
+         Figura.figura.get(contador).add(volumen); //3
+         Figura.figura.get(contador).add((numLado*1.0)); //4,  Tipo de Figura cuadrada  ##Rectangulo = 2.0
     }
 }

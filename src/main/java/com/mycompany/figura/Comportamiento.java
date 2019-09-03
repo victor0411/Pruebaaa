@@ -5,8 +5,6 @@
  */
 package com.mycompany.figura;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author SuperUs
@@ -14,8 +12,6 @@ import java.util.ArrayList;
 public interface Comportamiento {
     
     public void imprimirTipoFigura();
-    
-    public void imprimirPerimetroArea();
     
     
 }

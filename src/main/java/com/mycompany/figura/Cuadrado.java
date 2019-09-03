@@ -6,7 +6,6 @@
 package com.mycompany.figura;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.Vector;
 /**
  *
  * @author SuperUs
@@ -75,16 +74,16 @@ public class Cuadrado extends Bidimencional {
         }
     }
 
-    @Override
     public void imprimirPerimetroArea() {
-        System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
-        System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
-        contador = (Main.figura.size());
-        Main.figura.add(new ArrayList<Double>());
-        Main.figura.get(contador).add(2.0);
-        Main.figura.get(contador).add(area); 
-        Main.figura.get(contador).add(perimetro);
-        Main.figura.get(contador).add((tipo*1.0)); 
+        //System.out.println("Area es igual a: " + (double)Math.round(area * 100)/100 );
+        //System.out.println("Perimetro es igual a: " + (double)Math.round(perimetro * 100)/100 );
+        System.out.println("Cuadrado Ingresado");
+        contador = (Figura.figura.size());
+        Figura.figura.add(new ArrayList<Double>());
+        Figura.figura.get(contador).add(2.0);
+        Figura.figura.get(contador).add(area); 
+        Figura.figura.get(contador).add(perimetro);
+        Figura.figura.get(contador).add((tipo*1.0)); 
     }
 
     
