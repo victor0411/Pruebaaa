@@ -13,8 +13,8 @@ public abstract class Tridimencional implements Comportamiento{
     public double area;
     public double perimetro;
     public double volumen;
-
-    public Tridimencional(double area, double perimetro, double volumen) {
+    public int contador;
+    public Tridimencional(double area, double perimetro, double volumen, int contador1) {
         this.area = area;
         this.perimetro = perimetro;
         this.volumen = volumen;
