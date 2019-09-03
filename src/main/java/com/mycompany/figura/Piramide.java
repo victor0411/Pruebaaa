@@ -121,10 +121,10 @@ public class Piramide extends Tridimencional{
         System.out.println("Piramide Ingresado");
         contador = (Figura.figura.size());
          Figura.figura.add(new ArrayList<Double>());
-         Figura.figura.get(contador).add(6.0); // 0 , Tipo Figura    ##Cuadrado = 1.0
-         Figura.figura.get(contador).add(area); //1, Area del Cadrado
-         Figura.figura.get(contador).add(perimetro);//2, 
-         Figura.figura.get(contador).add(volumen); //3
-         Figura.figura.get(contador).add((numLado*1.0)); //4,  Tipo de Figura cuadrada  ##Rectangulo = 2.0
+         Figura.figura.get(contador).add(6.0); 
+         Figura.figura.get(contador).add(area); 
+         Figura.figura.get(contador).add(perimetro);
+         Figura.figura.get(contador).add(volumen); 
+         Figura.figura.get(contador).add((numLado*1.0)); 
     }
 }
