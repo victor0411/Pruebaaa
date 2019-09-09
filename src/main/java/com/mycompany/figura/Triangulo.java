@@ -31,6 +31,9 @@ public class Triangulo extends Bidimencional{
     public Triangulo() {
     }
 
+    
+    
+    
     /**
      * get variable lado1
      * @return lado1
@@ -87,6 +90,12 @@ public class Triangulo extends Bidimencional{
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
+  
+    
+   
+   
+
+    
     
     /**
      * Metodo submenu que pide los lados del triangulo
